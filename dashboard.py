@@ -478,7 +478,7 @@ elif page == "📋 Data Dictionary":
 
     try:
         base = os.path.dirname(os.path.abspath(__file__))
-        dd = pd.read_csv(os.path.join(base, '../data/data_dictionary.csv'))
+        dd = pd.read_csv(os.path.join(base, 'data/data_dictionary.csv'))
         st.dataframe(dd, use_container_width=True, height=500)
     except Exception as e:
         st.warning(f"data_dictionary.csv tidak ditemukan: {e}")
